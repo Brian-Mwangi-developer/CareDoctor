@@ -25,7 +25,7 @@ export const AppointmentForm = ({
     patientId: string,
     type: "create" | "schedule" | "cancel",
     appointment?: Appointment,
-    setOpen: (open: boolean) => void
+    setOpen?: Dispatch<SetStateAction<boolean>>
 }) => {
   const router = useRouter();
     const [isLoading, setIsLoading] = useState(false);
